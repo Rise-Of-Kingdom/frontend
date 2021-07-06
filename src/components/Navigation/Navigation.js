@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
+import './Navigation.css';
 
 export default class Navigation extends Component {
     render() {
         return (
-            <div>
+            <header className='nav-header'>
                 <h1 className='logo'>ROK Social</h1>
 
                 <input type='checkbox' id='nav-toggle' className='nav-toggle' />
-                <nav>
+                <nav className='nav-top'>
                     <ul>
                         <li>
                             <a href='#'>Home</a>
                         </li>
                         <li>
-                            <a href='#'>About</a>
+                            <a href='#'>Kingdoms</a>
                         </li>
                         <li>
                             <a href='#'>Contact Us</a>
@@ -24,7 +25,7 @@ export default class Navigation extends Component {
                 <label htmlFor='nav-toggle' className='nav-toggle-label'>
                     <span></span>
                 </label>
-            </div>
+            </header>
         );
     }
 }
